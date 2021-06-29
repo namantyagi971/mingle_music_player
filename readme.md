@@ -6,6 +6,7 @@ A online music player app is based on html and purecss
 
 # Usage Tree
 1. index.html
+
    i. style.css
    ii. responsive.css
    
