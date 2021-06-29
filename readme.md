@@ -1,12 +1,20 @@
-This mingle music player is completely based on HTML and CSS.
+# Mingle Music Player
+A online music player app is based on html and purecss
 
-HTML files : index.html and playlist.html.
-CSS files : style.css, playlist.css and responsive.css.
+## Static Website Link
+<https://namantyagi971.github.io/mingle_music_player/>
 
-index.html uses style.css and responsive.css to make first webpage.
-on the other hand, playlist.html uses style.css,playlist.css and responsive.css to make the second webpage.
+# Usage Tree
+1. index.html
+   i. style.css
+   ii. responsive.css
+   
+2. playlist.html
+   i. style.css
+   ii. playlist.css
+   iii. responsive.css
+3. images
 
-Hope you like my first project!!!
-
-Any suggestions are most welcome :)
-
+The hierarchy shown above is not the folder structure. The sub-Files are used by the parent file.
+index.html uses style.css for all the basic styling and responsive.css for all the media queries related to responsiveness.
+Similarly playlist.html uses style.css, playlist.css for all the basic styling and responsive.css for all the meida queries related to responsiveness.
