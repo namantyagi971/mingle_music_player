@@ -8,12 +8,17 @@ A online music player app is based on html and purecss
 1. index.html
 
    i. style.css
+   
    ii. responsive.css
    
 2. playlist.html
+
    i. style.css
+   
    ii. playlist.css
+   
    iii. responsive.css
+   
 3. images
 
 The hierarchy shown above is not the folder structure. The sub-Files are used by the parent file.
