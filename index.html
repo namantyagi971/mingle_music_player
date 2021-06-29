@@ -1,0 +1,970 @@
+<!-- welcome to the mingle online music player :) -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mingle-Music Player</title>
+	<!-- Two CSS Files -->
+	<!-- 1. main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- 2. stylesheet including media queries -->
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<!-- script for font awesome -->
+	<script src="https://kit.fontawesome.com/00f5bd0a61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- navigation bar.It is build by applying CSS property Flex-->
+	<nav class="nav-bar flexible">
+		<!-- website logo and name -->
+		<div class="merge">
+			<!-- animated website logo  -->
+			<div class="website-logo">
+				<img src="images/music logo.jpg" alt="music logo">
+			</div>
+			<!-- website-name -->
+			<div class="website-name">
+				<h2>Mingle</h2>
+				<h4>Music Player</h4>
+			</div>
+		</div>
+		<!-- favourite text which is animated -->
+		<div class="favourite">
+			<h1>Favourite</h1>
+		</div>
+		<!-- search bar consists of search icon ,input type and microphone-->
+		<div class="search-bar">
+			<!-- search icon  -->
+			<span class="search-icon">
+				<i class="fas fa-search"></i>
+			</span>
+			<!-- input for typing music name to search -->
+			<span>
+				<input type="text" name="search" placeholder="Search...">
+			</span>
+			<!-- microphone -->
+			<span class="mic">
+				<i class="fas fa-microphone"></i>
+			</span>
+		</div>
+		<!--  animated notification bell icon -->
+		<div class="notify-bell">
+			<i class="fas fa-bell"></i>
+		</div>
+		<!-- profile image -->
+		<div class="profile">
+			<img src="images/profile.jpg" alt="profile">
+		</div>
+	</nav>
+
+	<main>
+		<!-- this is the main section.It consists of two section : article and aside. -->
+		<article>
+			<!-- this is the main header.It consists of three images -->
+			<div class="card flexible">
+				<!-- first image showing Latin hit music -->
+				<div class="size">
+					<img src="images/Latin club hits.jpg" alt="Latin hits">
+				</div>
+				<!-- second image showing music that boost the mood -->
+				<div class="size">
+					<img src="images/mood booster.png" alt="mood booster">
+				</div>
+				<!-- third image showing edm night -->
+				<div class="size">
+					<img src="images/edm night.jpg" alt="edm night">
+				</div>
+			</div>
+			<!-- this section shows latest release music-->
+			<div class="latest-release-content">
+				<!-- heading of latest release section -->
+				<div class="heading">
+					<h1>Latest Release</h1>
+				</div> 
+				<!-- this is the outer div which is built by using flex property-->
+				<div class="flexible">
+					<!-- this div contains three items song-image, song-name and dropdown list that appear on hovering -->
+					<div class="box-shadow zero-radius latest-release">
+						<!-- this div merge both song-image div and song-name div by using display inline-block property -->
+						<div class="merge">
+							<!-- song-image -->
+							<div class="song-image">
+								<img src="images/photo.jpg" class="image" alt="photo-song-image">
+								<!-- the play image comes on hovering over song-image and produce overlay effect-->
+								<div class="play-image">
+									<img src="images/play.png" alt="play button">
+								</div>
+							</div>
+							<!-- this div contains song-name -->
+							<div class="song-name">
+								<h2>Photo</h2>
+								<p>Jan 22,2021</p>
+							</div>
+						</div>
+						<!-- dropdown list initially has display none but on hovering,list will appear -->
+						<div class="dropdown-list">
+							<!-- font-awesome icon -->
+							<span><i class="fas fa-ellipsis-h"></i></span>
+							<!-- menu of dropdown list containing icons and information -->
+							<div class="dropdown-menu">
+								<ul class="list-style">
+									<li><i class="far fa-play-circle"></i> &emsp;Play Now</li>
+									<li><i class="fas fa-list-ul"></i> &emsp;Add to Queue</li>
+									<li><i class="fas fa-music"></i> &emsp;Add to Playlist</li>
+									<li><i class="fas fa-info-circle"></i> &emsp;Get Info</li>
+								</ul>
+							</div>
+							<!-- this will tell song duration -->
+							<p>4.44</p>
+						</div>
+					</div>
+					<!-- this div contains three items song-image, song-name and dropdown list that appear on hovering -->
+					<div class="box-shadow zero-radius latest-release">
+						<!-- this div merge both song-image div and song-name div by using display inline-block property -->
+						<div class="merge">
+							<!-- song-image -->
+							<div class="song-image">
+								<img src="images/gooba.jpg" class="image" alt="gooba image">
+								<!-- the play image comes on hovering over song-image and produce overlay effect-->
+								<div class="play-image">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<!-- this div contains song-name -->
+							<div class="song-name">
+								<h2>Gooba</h2>
+								<p>Jan 22,2021</p>
+							</div>
+						</div>
+						<!-- dropdown list initially has display none but on hovering,list will appear -->
+						<div class="dropdown-list">
+							<!-- font-awesome icon -->
+							<span><i class="fas fa-ellipsis-h"></i></span>
+							<!-- menu of dropdown list containing icons and information -->
+							<div class="dropdown-menu">
+								<ul class="list-style">
+									<li><i class="far fa-play-circle"></i> &emsp;Play Now</li>
+									<li><i class="fas fa-list-ul"></i> &emsp;Add to Queue</li>
+									<li><i class="fas fa-music"></i> &emsp;Add to Playlist</li>
+									<li><i class="fas fa-info-circle"></i> &emsp;Get Info</li>
+								</ul>
+							</div>
+							<!-- this will tell song duration -->
+							<p>4.44</p>
+						</div>
+					</div>
+					<!-- this div contains three items song-image, song-name and dropdown list that appear on hovering -->
+					<div class="box-shadow zero-radius latest-release">
+						<!-- this div merge both song-image div and song-name div by using display inline-block property -->
+						<div class="merge">
+							<!-- song-image -->
+							<div class="song-image">
+								<img src="images/dard.jpg" class="image" alt="dard">
+								<!-- the play image comes on hovering over song-image and produce overlay effect -->
+								<div class="play-image">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<!-- this div contains song-name -->
+							<div class="song-name">
+								<h2>Dard</h2>
+								<p>Jan 22,2021</p>
+							</div>
+						</div>
+						<!-- dropdown list initially has display none but on hovering,list will appear -->
+						<div class="dropdown-list">
+							<!-- font-awesome icon -->
+							<span><i class="fas fa-ellipsis-h"></i></span>
+							<!-- menu of dropdown list containing icons and information -->
+							<div class="dropdown-menu">
+								<ul class="list-style">
+									<li><i class="far fa-play-circle"></i> &emsp;Play Now</li>
+									<li><i class="fas fa-list-ul"></i> &emsp;Add to Queue</li>
+									<li><i class="fas fa-music"></i> &emsp;Add to Playlist</li>
+									<li><i class="fas fa-info-circle"></i> &emsp;Get Info</li>
+								</ul>
+							</div>
+							<!-- this will tell song duration -->
+							<p>4.44</p>
+						</div>
+					</div>
+					<!-- this div contains three items song-image, song-name and dropdown list that appear on hovering -->
+					<div class="box-shadow zero-radius latest-release">
+						<!-- this div merge both song-image div and song-name div by using display inline-block property -->
+						<div class="merge">
+							<!-- song-image -->
+							<div class="song-image">
+								<img src="images/temporary pyar.jpg" class="image" alt="temporary pyar">
+								<!-- the play image comes on hovering over song-image and produce overlay effect-->
+								<div class="play-image">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<!-- this div contains song-name -->
+							<div class="song-name">
+								<h2>Temporary Pyar</h2>
+								<p>Jan 22,2021</p>
+							</div>
+						</div>
+						<!-- dropdown list initially has display none but on hovering,list will appear -->
+						<div class="dropdown-list">
+							<!-- font-awesome icon -->
+							<span><i class="fas fa-ellipsis-h"></i></span>
+							<!-- menu of dropdown list containing icons and information -->
+							<div class="dropdown-menu">
+								<ul class="list-style">
+									<li><i class="far fa-play-circle"></i> &emsp;Play Now</li>
+									<li><i class="fas fa-list-ul"></i> &emsp;Add to Queue</li>
+									<li><i class="fas fa-music"></i> &emsp;Add to Playlist</li>
+									<li><i class="fas fa-info-circle"></i> &emsp;Get Info</li>
+								</ul>
+							</div>
+							<!-- this will tell song duration -->
+							<p>4.44</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- this section belong to Popular artists -->
+			<!-- heading -->
+			<div class="heading">
+				<h1>Popular Artists</h1>
+			</div> 
+			<!--this is outer div which uses flex property to its 6 inner div that contains images and name of 6 artists -->
+			<div class="artist flexible">
+				<!-- div contains artist image and name -->
+				<div class="one box-shadow">
+					<img src="images/sonu nigam.jpg" class="image" alt="sonu nigam">
+					<p>Sonu Nigam</p>
+					<!-- this div contains play image that appear on hovering of artist image and produce overlay effect-->
+					<div class="play-image subs">
+						<a href="playlist.html"><img src="images/play.png" alt="play"></a>
+					</div>
+				</div>
+				<!-- div contains artist image and name -->
+				<div class="one box-shadow">
+					<img src="images/bohemia.jpg" class="image" alt="bohemia">
+					<p>Bohemia</p>
+					<!-- this div contains play image that appear on hovering of artist image and produce overlay effect -->
+					<div class="play-image subs">
+						<a href="playlist.html"><img src="images/play.png" alt="play"></a>
+					</div>
+				</div>
+				<!-- div contains artist image and name -->
+				<div class="one box-shadow">
+					<img src="images/neha kakkar.jpg" class="image" alt="neha kakkar">
+					<p>Neha Kakkar</p>
+					<!-- this div contains play image that appear on hovering of artist image and produce overlay effect-->
+					<div class="play-image subs">
+						<a href="playlist.html"><img src="images/play.png" alt="play"></a>
+					</div>
+				</div>
+				<!-- div contains artist image and name -->
+				<div class="one box-shadow">
+					<img src="images/arijit singh.jpg" class="image" alt="arijit singh">
+					<p>Arijit Singh</p>
+					<!-- this div contains play image that appear on hovering of artist image and produce overlay effect-->
+					<div class="play-image subs">
+						<a href="playlist.html"><img src="images/play.png" alt="play"></a>
+					</div>
+				</div>
+				<!-- div contains artist image and name -->
+				<div class="one box-shadow">
+					<img src="images/dhvani bhanushali.jpg" class="image" alt="dhvani">
+					<p>Dhvani</p>
+					<!-- this div contains play image that appear on hovering of artist image and produce overlay effect-->
+					<div class="play-image subs">
+						<a href="playlist.html"><img src="images/play.png" alt="play"></a>
+					</div>
+				</div>
+				<!-- div contains artist image and name -->
+				<div class="one box-shadow">
+					<img src="images/divine.png" class="image" alt="divine">
+					<p>Divine</p>
+					<!-- this div contains play image that appear on hovering of artist image and produce overlay effect-->
+					<div class="play-image subs">
+						<a href="playlist.html"><img src="images/play.png" alt="play"></a>
+					</div>
+				</div>
+			</div>
+			<!-- this is the outer div which again uses flex property to its 7 inner div.This outer div represents different music types -->
+			<div class="music-type flexible">
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/stations.jpg" alt="stations">
+					<p>Stations</p>
+				</div>
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/love.jpg" alt="love">
+					<p>Love</p>
+				</div>
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/retro.jpg" alt="retro">
+					<p>Retro</p>
+				</div>
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/chill.png" alt="chill">
+					<p>Chill</p>
+				</div>
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/workout.png" alt="workout">
+					<p>Workout</p>
+				</div>
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/rock.jpg" alt="rock">
+					<p>Rock</p>
+				</div>
+				<!-- this div contains image of music type and name -->
+				<div class="one box-shadow">
+					<img src="images/Pop.jpg" alt="pop">
+					<p>Pop</p>
+				</div>
+			</div>
+			<!-- This is the outer div which uses flex property and contains different music form -->
+			<div class="music-form flexible">
+				<!-- this is parent div which helps in zoom out of child div when scale prperty is applied to child div -->
+				<div class="parent">
+					<!-- this div contains background image which is in CSS file and text -->
+					<div class="party child">
+						<div class="text-middle">
+							Party
+						</div>
+					</div>
+				</div>
+				<!-- this is parent div which helps in zoom out of child div when scale prperty is applied to child div -->
+				<div class="parent">
+					<!-- this div contains background image which is in CSS file and text -->
+					<div class="electronic child">
+						<div class="text-middle">
+							Electronic
+						</div>
+					</div>
+				</div>
+				<!-- this is parent div which helps in zoom out of child div when scale prperty is applied to child div -->
+				<div class="parent">
+					<!-- this div contains background image which is in CSS file and text -->
+					<div class="roadtrip child">
+						<div class="text-middle">
+							Road Trip
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- This section consists of Latest English release music-->
+			<section>
+				<!-- heading -->
+				<div class="heading">
+					<h1>Latest English</h1>
+				</div> 
+				<!-- outer div using flex property -->
+				<div class="artist flexible">
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/memories.jpg" alt="memories">
+						<p>Memories</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/perfect.jpg" alt="perfect">
+						<p>Perfect</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/senorita.png" alt="senorita">
+						<p>Senorita</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/wolves.jpg" alt="wolves">
+						<p>Wolves</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/hello.jpg" alt="hello">
+						<p>Hello</p>
+						<p>Jan 20,2021</p>
+					</div>
+				</div>
+			</section>
+			<!--This section consists of Latest Hindi release music -->
+			<section>
+				<!-- heading -->
+				<div class="heading">
+					<h1>Latest Hindi</h1>
+				</div> 
+				<!-- outer div using flex property -->
+				<div class="artist flexible">
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/thodi jagah.jpg" alt="thodi-jagah">
+						<p>Thodi Jagah</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/tera ban jaunga.jpg" alt="tera ban jaunga">
+						<p>Tera Ban Jaunga</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/khairiyat.jpg" alt="khairiyat">
+						<p>Khairiyat</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/filhall.jpg" alt="filhall">
+						<p>Filhall</p>
+						<p>Jan 20,2021</p>
+					</div>
+					<!-- this div contains image and description of latest release song -->
+					<div class="box-shadow zero-radius combo">
+						<img src="images/duniya.jpg" alt="duniya">
+						<p>Duniya</p>
+						<p>Jan 20,2021</p>
+					</div>
+				</div>
+			</section> 	
+		</article>
+		<!-- here marks the end of article section and from here aside section will begin -->
+		<!-- aside -->
+		<aside class="aside-section">
+			<!--the div having class as dropdown-tally will be hidden for browser width > 1100px and will appear as a side bar with discover more title for lesser browser width.Hovering on the discover more title ,the playlists of song will come -->
+			<div class="dropdown-tally">
+				<!-- font awesome icon -->
+				<div class="discover">
+					<span><i class="fas fa-angle-double-left"></i>&ensp;Discover More</span>
+				</div>
+				<!-- div containing playlist heading and songs -->
+				<div class="dropdown-content">
+					<!-- heading -->
+					<div class="aside-heading">
+						<div class="div1">
+							Playlist
+						</div>
+						<!-- this div contains caret down icon hovering over it will produce dropdown menu -->
+						<div class="div2">
+							Queue
+							<div class="dropdown-list">
+								<!-- font awesome icon -->
+								<span><i class="fas fa-caret-down"></i></span>
+								<!-- dropdown menu containing playlists and favourite songs-->
+								<div class="dropdown-menu">
+									<ul class="list-style">
+										<li><i class="fab fa-playstation">&emsp;</i>Playlists</li>
+										<li><i class="fas fa-heart"></i>&emsp;Favourite Songs</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- this div contains all playlist items -->
+					<div class="aside-content">
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								01
+							</div>
+							<div class="playlist-image">
+								<img src="images/mirage.jpg" class="image" alt="mirage">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Mirage</h4>
+								<h5>Else</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								02
+							</div>
+							<div class="playlist-image">
+								<img src="images/worry bout us.jpg" class="image" alt="worry bout us">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Worry bout us</h4>
+								<h5>Rosie Lowe</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								03
+							</div>
+							<div class="playlist-image">
+								<img src="images/bapu tere karke.jpg" class="image" alt="bapu tere karke">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Bapu tere karke</h4>
+								<h5>Amar Sandhu</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								04
+							</div>
+							<div class="playlist-image">
+								<img src="images/mehrama.jpg" class="image" alt="mehrama">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Mehrama</h4>
+								<h5>Darshan Raval</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								05
+							</div>
+							<div class="playlist-image">
+								<img src="images/tum hi aana.jpg" class="image" alt="tum hi aana">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Tum Hi Aana</h4>
+								<h5>Arijit Singh</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								06
+							</div>
+							<div class="playlist-image">
+								<img src="images/mirage.jpg" class="image" alt="mirage">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Mirage</h4>
+								<h5>Else</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								07
+							</div>
+							<div class="playlist-image">
+								<img src="images/worry bout us.jpg" class="image" alt="worry bout us">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Worry bout us</h4>
+								<h5>Rosie Lowe</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								08
+							</div>
+							<div class="playlist-image">
+								<img src="images/bapu tere karke.jpg" class="image" alt="bapu tere karke">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Bapu tere karke</h4>
+								<h5>Amar Sandhu</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								09
+							</div>
+							<div class="playlist-image">
+								<img src="images/mehrama.jpg" class="image" alt="mehrama">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Mehrama</h4>
+								<h5>Darshan Raval</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+						<div class="playlist-item">
+							<div class="number">
+								10
+							</div>
+							<div class="playlist-image">
+								<img src="images/tum hi aana.jpg" class="image" alt="tum hi aana">
+								<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+								<div class="play-image deputy">
+									<img src="images/play.png" alt="play">
+								</div>
+							</div>
+							<div class="playlist-song-desc">
+								<h4>Tum Hi Aana</h4>
+								<h5>Arijit Singh</h5>
+							</div>
+							<div class="playlist-icon">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- this div will appear on browser width > 1100px and become hidden for browser width < 1100px for the sake of maintaining the responsiveness of webpage -->
+			<div class="normal">
+				<!-- heading -->
+				<div class="aside-heading">
+					<div class="div1">
+						Playlist
+					</div>
+					<!-- this div contains caret down icon hovering over it will produce dropdown menu -->
+					<div class="div2">
+						Queue
+						<div class="dropdown-list">
+							<!-- font-awesome icon -->
+							<span><i class="fas fa-caret-down"></i></span>
+							<!-- dropdown menu containing playlists and favourite songs-->
+							<div class="dropdown-menu">
+								<ul class="list-style">
+									<li><i class="fab fa-playstation">&emsp;</i>Playlists</li>
+									<li><i class="fas fa-heart"></i>&emsp;Favourite Songs</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- this div contains all playlist items -->
+				<div class="aside-content">
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							01
+						</div>
+						<div class="playlist-image">
+							<img src="images/mirage.jpg" class="image" alt="mirage">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Mirage</h4>
+							<h5>Else</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							02
+						</div>
+						<div class="playlist-image">
+							<img src="images/worry bout us.jpg" class="image" alt="worry bout us">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Worry bout us</h4>
+							<h5>Rosie Lowe</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							03
+						</div>
+						<div class="playlist-image">
+							<img src="images/bapu tere karke.jpg" class="image" alt="bapu tere karke">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Bapu tere karke</h4>
+							<h5>Amar Sandhu</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							04
+						</div>
+						<div class="playlist-image">
+							<img src="images/mehrama.jpg" class="image" alt="mehrama">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Mehrama</h4>
+							<h5>Darshan Raval</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							05
+						</div>
+						<div class="playlist-image">
+							<img src="images/tum hi aana.jpg" class="image" alt="tum hi aana">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Tum Hi Aana</h4>
+							<h5>Arijit Singh</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							06
+						</div>
+						<div class="playlist-image">
+							<img src="images/mirage.jpg" class="image" alt="mirage">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Mirage</h4>
+							<h5>Else</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							07
+						</div>
+						<div class="playlist-image">
+							<img src="images/worry bout us.jpg" class="image" alt="worry bout us">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Worry bout us</h4>
+							<h5>Rosie Lowe</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							08
+						</div>
+						<div class="playlist-image">
+							<img src="images/bapu tere karke.jpg" class="image" alt="bapu tere karke">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Bapu tere karke</h4>
+							<h5>Amar Sandhu</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							09
+						</div>
+						<div class="playlist-image">
+							<img src="images/mehrama.jpg" class="image" alt="mehrama">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Mehrama</h4>
+							<h5>Darshan Raval</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+					<!-- div having class as playlist item contains song number,song image,song desc and heart icon -->
+					<div class="playlist-item">
+						<div class="number">
+							10
+						</div>
+						<div class="playlist-image">
+							<img src="images/tum hi aana.jpg" class="image" alt="tum hi aana">
+							<!-- play image will appear when hovering on playlist image and produce overlay effect -->
+							<div class="play-image deputy">
+								<img src="images/play.png" alt="play">
+							</div>
+						</div>
+						<div class="playlist-song-desc">
+							<h4>Tum Hi Aana</h4>
+							<h5>Arijit Singh</h5>
+						</div>
+						<div class="playlist-icon">
+							<i class="far fa-heart"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<!-- here the aside section gets complete -->
+	</main>
+	<!-- here the main section gets complete and marks the beginning of footer of webpage that will tell currently which song is playing-->
+	<footer class="flexible foot">
+		<!-- this is outer div that contains three div containing song-image,song description and lovable icons -->
+		<div class="active-song-desc flexible">
+			<div class="active-song-image">
+				<img src="images/temporary pyar.jpg" alt="temporary pyar">
+			</div>
+			<div class="active-song-name">
+				<p>Temporary Pyar</p>
+				<p>Kaka</p>
+			</div>
+			<div class="active">
+				<span><i class="far fa-heart"></i>&emsp;</span>
+				<span><i class="fas fa-ban"></i>&emsp;</span>
+			</div>
+		</div>
+		<!-- this div contains controls button like play previous song ,next song ,pause and many more. -->
+		<div class="player">
+			<div class="controls flexible">
+				<div>
+					<i class="fas fa-random"></i>
+				</div>
+				<div>
+					<i class="fas fa-step-backward"></i>
+				</div>
+				<div>
+					<i class="far fa-pause-circle"></i>
+				</div>
+				<div>
+					<i class="fas fa-step-forward"></i>
+				</div>
+				<div>
+					<i class="fas fa-redo-alt"></i>
+				</div>
+			</div>
+			<!-- this div contains slider through which song duration can be seen -->
+			<div class="slider">
+				<!-- this depicts how much song is complete -->
+				<span>1:48</span>
+				<span><input type="range" min="0" max="100"></span>
+				<!-- this depicts total duration of song -->
+				<span>4:48</span>
+			</div>
+		</div>
+		<!-- this div contains some extra icons like Volume alider, expand icon, tv icon and many more -->
+		<div class="extras flexible">
+			<div>
+				<i class="fas fa-list-ul"></i>
+			</div>
+			<div>
+				<i class="fas fa-tv"></i>
+			</div>
+			<div>
+				<span><i class="fas fa-volume-up"></i></span>
+				<span class="volume-slider"><input type="range" min="0" max="100"> </span>
+			</div>
+			<div>
+				<i class="fas fa-expand-alt"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- this marks the ending of footer -->
+
+</body>
+<!-- here body of webpage ends -->
+</html>
+<!-- this ends the whole webpage :) -->

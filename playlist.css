@@ -1,0 +1,149 @@
+/*this is playlist CSS*/
+
+/*body header*/
+.jumbotron{
+	flex-wrap: nowrap;
+	background-color: #033346;
+	margin:10px;
+}
+.followers{
+	text-align: end;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+.jumbotron-song-desc{
+	margin-left:2%;
+}
+.jumbotron-song-name {
+    line-height: 0;
+    padding-top: 4%;
+}
+.jumbotron-song-summary{
+	font-family: sans-serif;
+	font-size: 0.8rem;
+}
+
+.jumbotron-image img{
+	height:300px;
+	width:300px;
+}
+.jumbotron-button button{
+	height:30px;
+	width:25%;
+	border:0px;
+}
+button[type="#"] {
+    background-image: linear-gradient(to right,blue,#e91e63);
+    color: white;
+}
+button[type="button"]{
+	background-color:#033346; 
+    color: white;
+}
+/*playlist section*/
+.playlist-item{
+	margin: 10px;
+	background-color:#033346; 
+}
+.playlist-item:hover{
+     background-color: grey;
+     border:0px;
+}
+.playlist-item:hover .playlist-icon{
+	color:white;
+}
+.playlist-song-desc,.playlist-image,.number{
+	margin-left:2%;
+}
+.playlist-image img,.playlist-song-desc{
+	padding:4px;
+}
+.playlist-song-duration{
+    position: absolute;
+    left: 64%;
+    top: 30%;
+}
+
+/*aside section*/
+aside{
+	margin-left: 1%;
+	width:26%;
+}
+.similar{
+	margin-top:5px;
+}
+.div1{
+	font-size:1.5rem;
+	font-family: sans-serif;
+}
+.div2 {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+}
+/*Similar artist and recently played section*/
+.artist-list{
+	position: relative;
+	margin: 10px;
+}
+.artist-list > div{
+	display: inline-block;
+	vertical-align: top;
+}
+.artist-song-desc{
+	margin-top: 13px;
+	margin-left: 5px;
+	line-height: 0;
+}
+.artist-icon{
+	position: absolute;
+	top:-15px;
+	right:5px;
+	line-height: 0;
+}
+.artist-image{
+    filter: drop-shadow(2px 4px 8px darkgrey);
+    position: relative;
+
+}
+.artist-image img{
+	height:100px;
+	width:100px;	
+}
+.artist-list:hover{
+	background-color:#033346; 
+}
+/*reserve class to set play image*/
+.reserve img{
+	height:50px;
+	width:50px;
+	top:23%;
+	left:23%;
+}
+.artist-image:hover .image{
+	opacity: 0.3;
+}
+.artist-image:hover .play-image img{
+	display: block;
+}
+.bg-none{
+	background-color: transparent !important;
+}
+.bg-none:hover{
+	background-color: #033346 !important;
+}
+/*for overflow scroll*/
+.artist{
+	height:18vh;
+	overflow: scroll;
+}
+.artist::-webkit-scrollbar{
+	display: none;
+}
+.aside-playlist{
+	height:40vh;
+	overflow: scroll;
+}
+.aside-playlist::-webkit-scrollbar{
+	display: none;
+}

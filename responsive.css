@@ -1,0 +1,114 @@
+/*this is the responsive file which includes all the media queries to make webpage responsive*/
+
+@media screen and (max-width: 768px)
+{
+	/*for lesser browser width favourite, will not visible*/
+	.favourite{
+		display: none;
+	}
+}
+@media screen and (max-width: 576px)
+{
+	/*decreasing the search input width*/
+	input[type="text"]{
+		width:100px;
+	}
+	/*decreasing the footer icons width*/
+	.active{
+		width:20px;
+		line-height: 0;
+	}
+	/*decreasing the width of div containing extras icon*/
+	.extras{
+		width:100px;
+	}
+	/*removing margins*/
+	.extras div,.active-song-desc div{
+	    margin-right:0px;
+	    margin-left: 0px;
+    }
+}
+@media screen and (max-width: 430px)
+{
+	/*decreasing the width of input*/
+	input[type="text"],input[type="range"]{
+		width:50px;
+		height:15px;
+	}
+	/*reducing the font size */
+	html{
+		font-size: 15px;
+	}
+	.website-name{
+		font-size: 10px;
+	}
+	.notify-bell{
+		font-size: 1rem;
+	}
+	/*decreasing height and width of logo and profile image*/
+	.website-logo img,.profile img{
+		height:30px;
+		width:30px;
+	}
+	/*reducing margin*/
+	.search-bar{
+		margin-top: 0px;
+	}
+}
+@media screen and (max-width:340px){
+	/*removing extras div*/
+	.extras{
+		display: none;
+	}
+	/*reducing font-size and margin*/
+	.song-name{
+		margin-left: 0px;
+	}
+	.song-name h2{
+		font-size:18px;
+	}
+}
+/* responsiveness on article*/
+@media screen and (max-width:1100px){
+	/*hiding the aside section to make complete width for article*/
+	article{
+		width:100%;
+	}
+	/*aside section will appear on hovering of discover block */
+	.dropdown-tally{
+		display: block;
+		position: fixed;
+		top:30%;
+		right:0%;
+	}
+	.dropdown-tally:hover .dropdown-content{
+		display: block;
+		right:0%;
+	}
+    .normal{
+    	display: none;
+    }
+}
+@media screen and (max-width: 860px){
+	/*removing the volume slider*/
+	.volume-slider{
+		display: none;
+	}
+}
+@media screen and (max-width: 720px){
+	/*removing the footer image*/
+	.active-song-image{
+		display: none;
+	}
+}
+/*media query on playlist image*/
+@media screen and (max-width: 620px){
+	/*making flex wrap as wrap and image will occupy full width*/
+	.jumbotron-image img{
+		width:100%;
+	}
+	.jumbotron{
+		flex-wrap: wrap;
+	}
+}
+	
